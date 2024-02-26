@@ -1,3 +1,4 @@
+@ -1,36 +0,0 @@
 # Curso Alura React: desenvolvendo uma biblioteca de componentes
 
 ## Aula 01 - Preparando o terreno
