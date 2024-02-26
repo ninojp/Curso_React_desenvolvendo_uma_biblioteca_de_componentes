@@ -1,4 +1,3 @@
-@ -1,36 +0,0 @@
 # Curso Alura React: desenvolvendo uma biblioteca de componentes
 
 ## Aula 01 - Preparando o terreno
@@ -35,3 +34,41 @@ Nesta aula, o instrutor ensina como testar um componente localmente. Ele explica
 - Escrever uma story para apresentar o componente criado no Storybook;
 - Construir a biblioteca localmente, para testar o código desenvolvido;
 - Importar o componente criado no ambiente de teste local.
+
+## Aula 02 - Do VSCode para o Mundo
+
+### Aula 02 - Repositório no Github - Vídeo 01
+
+Nesta aula, o instrutor ensina como criar um novo repositório no GitHub e versionar um projeto utilizando comandos do Git. Ele explica passo a passo como criar um repositório no GitHub, tanto pela interface web quanto localmente. O instrutor também mostra como adicionar arquivos ao repositório, fazer commits e fazer o push das alterações para o repositório remoto. Ele destaca a importância de versionar o projeto para acompanhar sua evolução e facilitar a colaboração com outros desenvolvedores.
+
+### Aula 02 - Conectando-se ao NPM - Vídeo 02
+
+Nesta aula, o instrutor aborda a necessidade de se conectar ao NPM para consumir pacotes e criar uma biblioteca de componentes. Ele menciona as ferramentas utilizadas, como TSDX, Storybook, Styled Components e React. É necessário criar uma conta gratuita no npmjs.com e fazer o login no terminal usando o comando npm login. O instrutor destaca a importância da combinação do GitHub e NPM para publicar o pacote. Os pré-requisitos de entrar no GitHub e criar uma conta no NPM já foram cumpridos. O próximo vídeo tratará do processo de publicação do pacote.
+
+### Aula 02 - Repositório - Vídeo 03
+
+Agora que já temos todos os pré-requisitos alinhados, o projeto está no GitHub, a conta do NPM está linkada e logada no meu terminal, podemos partir para a parte de publicar o pacote.
+
+> npm publish --access=public
+
+Vamos criar um projeto totalmente novo, e vamos instalar esse pacote e ver se conseguimos usar no nosso componente de botão. Vou voltar para a pasta raiz, vou deixar o nome do app que o terminal está sugerindo.
+
+> npx create-react-app alurabooks-consumer --template typescript
+
+E agora, vamos fazer a instalação do nosso pacote que é o “crdubdc-alurabooks” no nosso projeto. Vou no terminal, e vou pedir para fazer um:
+
+> npm install crdubdc-alurabooks
+
+Nesta aula, o instrutor discute o processo de publicação de um pacote no NPM e como utilizá-lo em um projeto React. Ele mostra o comando npm publish --access=public para publicar o pacote e explica que o acesso é público. Em seguida, ele cria um projeto React do zero e instala a biblioteca criada anteriormente. Ele destaca que qualquer pessoa que trabalhe com React pode instalar o design system do AluraBooks e utilizar os componentes localmente. O instrutor menciona que, por enquanto, só existe o componente do botão, mas que serão construídos outros componentes no decorrer do curso. Ele desafia os alunos a criarem o próximo componente, um componente de card, e menciona que há um gabarito disponível para auxiliar. Por fim, ele menciona que ainda há muito a ser feito, como conceituar a parte de versionamento e melhorar o processo de publicação de versões.
+
+### Aula 02 - Para saber mais: atalhos do VSCode
+
+Conheça alguns dos atalhos do Visual Studio Code.
+
+Se liga [neste artigo](https://www.alura.com.br/artigos/visualstudio-code-instalacao-teclas-de-atalho-plugins-e-integracoes) que fala justamente sobre isso!
+
+### Aula 02 - O que aprendemos nessa aula`:`
+
+- Subir um projeto para o GitHub;
+- Conectar-se ao NPM;
+- Configurar o package.json corretamente, para que o pacote seja publicado com sucesso.
