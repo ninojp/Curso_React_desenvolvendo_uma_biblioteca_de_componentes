@@ -72,3 +72,15 @@ Se liga [neste artigo](https://www.alura.com.br/artigos/visualstudio-code-instal
 - Subir um projeto para o GitHub;
 - Conectar-se ao NPM;
 - Configurar o package.json corretamente, para que o pacote seja publicado com sucesso.
+
+## Aula 03 - Testando a Biblioteca
+
+### Aula 03 - Evoluindo o botão - Vídeo 01
+
+Nesta aula, o instrutor aborda a evolução do componente "AbBotao". Ele explica que o componente estava "hard coded" no código e não recebia nenhum argumento. Para resolver isso, o instrutor mostra como criar uma interface chamada "AbBotaoProps" que define as propriedades que o botão pode receber, como texto, tipo e função de clique. Em seguida, ele utiliza o Styled Components para estilizar o botão com base nas propriedades recebidas. Também é mostrado como implementar o efeito de hover no botão. Ao final, o instrutor mostra o resultado no Storybook, onde o botão agora recebe as propriedades definidas na interface e exibe corretamente o texto, tipo e função de clique. Essa evolução do componente é importante para torná-lo mais flexível e reutilizável em diferentes contextos.
+
+### Aula 03 - Stories também evoluem - Vídeo 02
+
+Nesta aula, o instrutor discute a evolução do componente "AbBotao" e a importância de mostrá-lo no Storybook. Ele mostra como criar histórias para o componente, alterar suas propriedades e fazer o bind delas no Storybook. O instrutor também mostra o resultado no navegador, onde é possível ver a documentação gerada pelo Storybook e testar as opções de botões. No próximo vídeo, será mostrado como fazer o upload do código para o GitHub e publicar a biblioteca no NPM.
+
+### Aula 03 - Entendendo o versionamento - Vídeo 03

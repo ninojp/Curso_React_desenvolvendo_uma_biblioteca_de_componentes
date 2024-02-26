@@ -1,23 +1,38 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const BotaoEstilizado = styled.button`
-    background-color: #EB9B00;
+const BotaoEstilizado = styled.button<IAbBotaoProps>`
+    background-color: ${(props: IAbBotaoProps) => props.tipo === 'primario' ? '#EB9B00' : '#FFF'};
     padding: 16px 32px;
     border: 2px solid #EB9B00;
-    color: #fff;
+    color: ${(props: IAbBotaoProps) => props.tipo === 'primario' ? '#FFF' : '#EB9B00'};
     font-size: 20px;
     cursor: pointer;
-    &:hover{
-        background-color: #B87900;
-        border: 2px solid #B87900;
-    }
+    ${(props: IAbBotaoProps) => props.tipo === 'primario' 
+    ? css`
+        &:hover{
+            background-color: #B87900;
+            border: 2px solid #B87900;
+        }`
+    : css`
+        &:hover{
+            background-color: #FFF;
+            border: 2px solid #B87900;
+            color: #B87900;
+        }`
+    };
 `;
 
-export const AbBotao = () => {
+export interface IAbBotaoProps{
+    texto?: string
+    tipo?: 'primario' | 'secundario'
+    onClick?: () => void
+};
+
+export const AbBotao = ({texto, tipo = 'primario', onClick}: IAbBotaoProps) => {
     return (
-        <BotaoEstilizado>
-            Clique Aqui
+        <BotaoEstilizado onClick={onClick} tipo={tipo}>
+            {texto}
         </BotaoEstilizado>
     );
 };
