@@ -118,3 +118,33 @@ Esse versionamento também é conhecido como [SEMVER](https://semver.org/lang/pt
 - Atualizar uma story para contemplar suas variantes;
 - Criar um componente de input de texto;
 - Atualizar a versão do pacote NPM manualmente.
+
+## Aula 04 - Evoluindo a Biblioteca
+
+### Aula 04 - Componentes mais complexos - Vídeo 01
+
+Nesta aula, o instrutor introduziu um novo componente chamado "Formato de livro" que faz parte do contexto do "alurabooks". Esse componente tem a função de receber opções do usuário e permitir a seleção de uma delas. O código inicial do componente consiste em uma seção com um cabeçalho contendo a palavra "ebook", uma div com um texto em negrito representando o preço do livro e um rodapé com os formatos disponíveis (.pdf, .epub, .mob). O próximo passo é estilizar o componente para deixá-lo mais parecido com o design do Figma.
+
+### Aula 04 - Adicionando estilo - Vídeo 02
+
+Nesta aula, o instrutor ensina como adicionar estilo a uma estrutura base de um componente utilizando o Styled Components. Ele utiliza o VSCode para escrever o código e mostra como estilizar a seção, utilizando referências do Figma. Ele também utiliza o CSS flexbox para centralizar os elementos e trabalha no espaçamento entre eles. O instrutor altera a fonte, estiliza o header, strong e footer, e trata o caso de quando a opção está selecionada, aplicando estilos diferentes. Por fim, ele adiciona o cursor: pointer para indicar que a opção é clicável.
+
+### Aula 04 - Definindo a interface - Vídeo 03
+
+Nesta aula, o instrutor adiciona vida e comportamento para o AbGrupoOpcoes através da criação de interfaces e da implementação de um método para renderizar as opções. Ele também demonstra como utilizar o Storybook para testar e visualizar o componente em tempo real.
+
+### Aula 04 - Controlando o estado - Vídeo 04
+
+Nesta aula, o instrutor ensina como implementar a funcionalidade de seleção de opção em um componente React. Ele utiliza o hook useState para armazenar a opção selecionada em uma constante chamada "selecao". Em seguida, ele cria uma função chamada "aoSelecionar" que atualiza o valor da seleção quando uma opção é selecionada. O instrutor também explica como corrigir um problema onde ambas as opções eram selecionadas ao clicar em uma delas, alterando os ids das opções. Além disso, ele menciona duas melhorias que podem ser feitas no componente: permitir um valor padrão para a seleção e adicionar um evento onChange para notificar quando a opção selecionada for alterada. O instrutor finaliza mencionando que o processo de publicação do componente no NPM e no GitHub será abordado em aulas futuras.
+
+### Aula 04 - Para saber mais: Storybook
+
+O Storybook é uma ferramenta de código aberto que nos permite criar componentes de interface do usuário. Ele simplifica o desenvolvimento, o teste e a documentação desses componentes.
+
+Se você quiser mergulhar ainda mais fundo nessa ferramenta, dá uma olhada [nesse curso](https://cursos.alura.com.br/course/nextjs-documentando-front-end-storybook) do Dev Soutinho que fala justamente sobre isso.
+
+### Aula 04 - O que aprendemos nessa aula`:`
+
+- Organizar a criação de novos componentes;
+- Criar interfaces para as APIs dos componentes;
+- Utilizar as exportações recomendadas pelo StoryBook para gerar documentação de forma automática.
