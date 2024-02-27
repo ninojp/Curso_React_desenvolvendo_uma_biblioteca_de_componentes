@@ -12,7 +12,7 @@ export interface ICardProps{
     children: ReactNode
 };
 
-export const Card = ({children}: ICardProps) => {
+export const AbCard = ({children}: ICardProps) => {
     return (
         <CardEstilizado>
             {children}

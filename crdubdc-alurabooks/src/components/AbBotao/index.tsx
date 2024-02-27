@@ -1,6 +1,12 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
+export interface IAbBotaoProps{
+    texto?: string
+    tipo?: 'primario' | 'secundario'
+    onClick?: () => void
+};
+
 const BotaoEstilizado = styled.button<IAbBotaoProps>`
     background-color: ${(props: IAbBotaoProps) => props.tipo === 'primario' ? '#EB9B00' : '#FFF'};
     padding: 16px 32px;
@@ -22,12 +28,6 @@ const BotaoEstilizado = styled.button<IAbBotaoProps>`
         }`
     };
 `;
-
-export interface IAbBotaoProps{
-    texto?: string
-    tipo?: 'primario' | 'secundario'
-    onClick?: () => void
-};
 
 export const AbBotao = ({texto, tipo = 'primario', onClick}: IAbBotaoProps) => {
     return (

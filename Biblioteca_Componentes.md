@@ -84,3 +84,37 @@ Nesta aula, o instrutor aborda a evolução do componente "AbBotao". Ele explica
 Nesta aula, o instrutor discute a evolução do componente "AbBotao" e a importância de mostrá-lo no Storybook. Ele mostra como criar histórias para o componente, alterar suas propriedades e fazer o bind delas no Storybook. O instrutor também mostra o resultado no navegador, onde é possível ver a documentação gerada pelo Storybook e testar as opções de botões. No próximo vídeo, será mostrado como fazer o upload do código para o GitHub e publicar a biblioteca no NPM.
 
 ### Aula 03 - Entendendo o versionamento - Vídeo 03
+
+Para atualizar o package no NPM, primeiro mudamos a versão no package.json("version": "0.2.0") e depois executamos o comando.
+> npm publish --access=public
+
+Depois atualizamos o repositório no GitHub.
+
+Nesta aula, o instrutor discute o processo de publicação de um pacote no NPM e no GitHub. Ele explica como abrir o terminal no VSCode, entra no diretório do projeto e utiliza o comando npm publish --access=public para publicar o pacote no NPM. Porém, ele recebe um erro 403, indicando que não pode publicar em cima de uma versão já existente. O instrutor explica o conceito de versionamento semântico e decide incrementar o segundo dígito da versão para 0.2.0. Ele atualiza o arquivo package.json com a nova versão e executa novamente o comando npm publish, desta vez com sucesso. Em seguida, ele mostra como fazer o push do código para o GitHub. Na próxima aula, será criado um novo componente.
+
+### Aula 03 - Diferentes tipos de dependências
+
+Dentro do package.json do nosso projeto, existem algumas listas de dependências. Entre elas nós temos a lista de devDependencies e peerDependencies.
+
+As devDependencies são utilizadas para indicar pacotes necessários para executar seu projeto em um ambiente de desenvolvimento. Já as peerDependencies são dependências em pares (precisam estar declaradas na lista de dependencies do projeto que utilizará esse pacote).
+
+Exatamente isso! As dependências de dev só existem em tempo de desenvolvimento e nos ajudam em diversas tarefas, como por exemplo: testar, compilar, depurar, etc. Já as peerDependencies existem justamente para evitar que uma mesma dependência seja instalada mais de uma vez. O nosso pacote, por exemplo, possui o React como peerDependencie.
+
+### Aula 03 - Para saber mais: NPM (versionamento semântico)
+
+Durante a aula nós aprendemos sobre o versionamento semântico:
+
+Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
+
+- Versão Maior (MAJOR): quando fizer mudanças incompatíveis na API,
+- Versão Menor (MINOR): quando adicionar funcionalidades mantendo compatibilidade, e
+- Versão de Correção (PATCH): quando corrigir falhas mantendo compatibilidade.
+
+Esse versionamento também é conhecido como [SEMVER](https://semver.org/lang/pt-BR/).
+
+### Aula 03 - O que aprendemos essa aula`:`
+
+- Evoluir um componente existente;
+- Atualizar uma story para contemplar suas variantes;
+- Criar um componente de input de texto;
+- Atualizar a versão do pacote NPM manualmente.
