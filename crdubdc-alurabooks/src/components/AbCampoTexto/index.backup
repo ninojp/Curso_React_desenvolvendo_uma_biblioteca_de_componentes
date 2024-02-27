@@ -9,7 +9,7 @@ const LabelEstilizada = styled.label`
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 16px;
     margin-bottom: 8px
-`;
+`
 
 const InputEstilizado = styled.input`
     font-size: 16px;
@@ -23,16 +23,16 @@ const InputEstilizado = styled.input`
     }
     width: 100%;
     box-sizing: border-box;
-`;
+`
 
-export interface IAbCampoTextoProps {
+export interface AbCampoTextoProps {
     label: string;
     value: string;
     type?: 'text' | 'email' | 'password' | 'date';
     onChange: (value: string) => void
-};
+}
 
-export const AbCampoTexto = ({ label, value, onChange, type = 'text' } : IAbCampoTextoProps) => {
+export const AbCampoTexto = ({ label, value, onChange, type = 'text' } : AbCampoTextoProps) => {
     return (
         <div>
             <LabelEstilizada>
@@ -41,4 +41,4 @@ export const AbCampoTexto = ({ label, value, onChange, type = 'text' } : IAbCamp
             <InputEstilizado type={type} value={value} onChange={event => onChange(event.target.value)}/>
         </div>
     )
-};
+}

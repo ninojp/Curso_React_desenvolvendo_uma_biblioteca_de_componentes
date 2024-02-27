@@ -148,3 +148,8 @@ Se você quiser mergulhar ainda mais fundo nessa ferramenta, dá uma olhada [nes
 - Organizar a criação de novos componentes;
 - Criar interfaces para as APIs dos componentes;
 - Utilizar as exportações recomendadas pelo StoryBook para gerar documentação de forma automática.
+
+## Aula 05 - Automatizando Tarefas
+
+### Aula 05 - Configurando o AUTO - Vídeo 01
+
