@@ -155,3 +155,4 @@ Se você quiser mergulhar ainda mais fundo nessa ferramenta, dá uma olhada [nes
 
 Nesta aula, o instrutor aborda a automatização do processo de publicação de pacotes no NPM utilizando o GitHub Actions. Ele introduz o pacote "Auto" e mostra como adicioná-lo ao projeto. Em seguida, cria um script de publicação e configura um arquivo YAML para definir as ações a serem executadas pelo GitHub. O instrutor destaca a importância de configurar as variáveis de ambiente, como o token do GitHub e do NPM. Ele também mostra como configurar o token do NPM no GitHub. Por fim, ele faz um commit e um push para o repositório e verifica se o pacote foi publicado corretamente no NPM.
 
+### Aula 05 - Criando a Action do Github - Vídeo 02
