@@ -169,53 +169,18 @@ Use e abuse de imagens, exemplos e explicações.
 
 [Clique aqui](https://www.alura.com.br/artigos/escrever-bom-readme) e confira um artigo mega bacana da Camila Fernanda com altas dicas de como deixar o seu ReadMe bonitão.
 
-### Aula 05 - 
+### Aula 05 - Para saber mais: licença da biblioteca
 
-import React from "react";
-import styled from "styled-components";
+Quando criamos um projeto base com o TSDX, ele automaticamente configura a licença MIT.
 
-const LabelEstilizada = styled.label`
-    color: #002F52;
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 16px;
-    margin-bottom: 8px
-`
+Licenciamento de software é um tema amplo, mas eu separei pra você [esse artigo](https://www.alura.com.br/artigos/como-escolher-uma-licenca-para-seu-projeto) pra te ajudar a entender melhor o assunto.
 
-const InputEstilizado = styled.input`
-    font-size: 16px;
-    line-height: 24px;
-    color: #002F52;
-    padding: 8px 24px;
-    border: 1px solid #002F52;
-    border-radius: 45px;
-    &:focus{
-        outline: none;
-    }
-    width: 100%;
-    box-sizing: border-box;
-`
+### Aula 05 - O que aprendemos nessa aula`:`
 
-export interface CampoTextoProps {
-    label: string;
-    value: string;
-    type?: 'text' | 'email' | 'password' | 'date';
-    onChange: (value: string) => void
-}
+- Configurar o auto para automatizar tarefas;
+- Utilizar as Actions do github para realizar tarefas repetitivas;
+- Realizar a publicação do pacote NPM a cada commit para master.
 
-export const AbCampoTexto = ({ label, value, onChange, type = 'text' } : CampoTextoProps) => {
-    return (
-        <div>
-            <LabelEstilizada>
-                {label}
-            </LabelEstilizada>
-            <InputEstilizado type={type} value={value} onChange={event => onChange(event.target.value)}/>
-        </div>
-    )
-}
+### Aula 05 - Conclusão - Vídeo 3
 
-Este codigo esta apresentando este erro:
-/src/components/AbCampoTexto/index.tsx(41,66): semantic error TS7006: Parameter 'event' implicitly has an 'any' type.
-como posso resolver?
+Nesta aula, o instrutor parabeniza os alunos pela conclusão do curso e destaca a importância de sair da zona de conforto e explorar novos conceitos. Durante o curso, os alunos aprenderam sobre estrutura de projeto, NPM, release e DevOps. Eles utilizaram o TSDX para gerar o projeto base, que incluía o Storybook para documentar e mostrar como os componentes funcionam. Aprenderam a se conectar ao NPM, publicar pacotes, gerar tokens e integrar o GitHub para fazer as publicações automáticas no NPM. Foram apresentados conceitos como a Action do GitHub e o pacote auto do NPM, responsável pelo versionamento. O instrutor explicou o conceito de versionamento semântico, onde os números no arquivo "package.json" indicam o tipo de release, feature ou bugfix. No final, os alunos conseguiram entregar um produto funcional, uma biblioteca que faz o publish automático de pacotes NPM. O instrutor convida os alunos a compartilharem o pacote gerado e a paleta de componentes criada nas redes sociais.
