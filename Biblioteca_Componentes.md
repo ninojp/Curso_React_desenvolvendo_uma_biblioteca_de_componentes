@@ -156,3 +156,66 @@ Se você quiser mergulhar ainda mais fundo nessa ferramenta, dá uma olhada [nes
 Nesta aula, o instrutor aborda a automatização do processo de publicação de pacotes no NPM utilizando o GitHub Actions. Ele introduz o pacote "Auto" e mostra como adicioná-lo ao projeto. Em seguida, cria um script de publicação e configura um arquivo YAML para definir as ações a serem executadas pelo GitHub. O instrutor destaca a importância de configurar as variáveis de ambiente, como o token do GitHub e do NPM. Ele também mostra como configurar o token do NPM no GitHub. Por fim, ele faz um commit e um push para o repositório e verifica se o pacote foi publicado corretamente no NPM.
 
 ### Aula 05 - Criando a Action do Github - Vídeo 02
+
+Nesta aula, o instrutor aborda a automação do processo de publicação de um projeto utilizando DevOps. Ele explica os passos para configurar a automação no Visual Studio, mencionando os scripts no arquivo "package.json" que são usados para iniciar, construir, testar, analisar e publicar o projeto. O instrutor também fala sobre o comando "yarn release" que executa a publicação automática, alterando a versão no arquivo "package.json" e realizando o "publish". Ele destaca a importância de mensagens de commit adequadas e a configuração de variáveis de ambiente, como o NPM_TOKEN, para a publicação. O uso do GitHub Actions para configurar automações também é mencionado, com destaque para o arquivo "push.yaml" que define as ações a serem executadas. O instrutor conclui que o fluxo de automação está pronto e que é possível continuar trabalhando e adicionando novos componentes ao projeto, com a certeza de que a publicação será feita de forma automatizada.
+
+### Aula 05 - Para saber mais: o ReadMe do projeto
+
+O ReadMe do repositório é a vitrine do projeto. Então, todos os caprichos são bem-vindos.
+
+Organize a documentação e explique como é o processo de contribuição para quem quiser colaborar com o pacote.
+
+Use e abuse de imagens, exemplos e explicações.
+
+[Clique aqui](https://www.alura.com.br/artigos/escrever-bom-readme) e confira um artigo mega bacana da Camila Fernanda com altas dicas de como deixar o seu ReadMe bonitão.
+
+### Aula 05 - 
+
+import React from "react";
+import styled from "styled-components";
+
+const LabelEstilizada = styled.label`
+    color: #002F52;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+    margin-bottom: 8px
+`
+
+const InputEstilizado = styled.input`
+    font-size: 16px;
+    line-height: 24px;
+    color: #002F52;
+    padding: 8px 24px;
+    border: 1px solid #002F52;
+    border-radius: 45px;
+    &:focus{
+        outline: none;
+    }
+    width: 100%;
+    box-sizing: border-box;
+`
+
+export interface CampoTextoProps {
+    label: string;
+    value: string;
+    type?: 'text' | 'email' | 'password' | 'date';
+    onChange: (value: string) => void
+}
+
+export const AbCampoTexto = ({ label, value, onChange, type = 'text' } : CampoTextoProps) => {
+    return (
+        <div>
+            <LabelEstilizada>
+                {label}
+            </LabelEstilizada>
+            <InputEstilizado type={type} value={value} onChange={event => onChange(event.target.value)}/>
+        </div>
+    )
+}
+
+Este codigo esta apresentando este erro:
+/src/components/AbCampoTexto/index.tsx(41,66): semantic error TS7006: Parameter 'event' implicitly has an 'any' type.
+como posso resolver?
